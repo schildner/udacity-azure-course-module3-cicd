@@ -25,7 +25,10 @@ jobs:
     
       - name: Install dependencies
         run: |
-          make lint
+			make install
+	  - name: Lint
+	    run: |
+	    	make lint
       - name: Test with pytest
         run: |
-          make test
+			make test
